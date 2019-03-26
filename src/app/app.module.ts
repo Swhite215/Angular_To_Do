@@ -4,6 +4,7 @@ import { NgModule } from "@angular/core";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { TodosComponent } from './components/todos/todos.component';
+import { TodoItemComponent } from './components/todo-item/todo-item.component';
 
 //Entry Point to Angular - Meeting Place for Components
 //Declarations - Components
@@ -11,7 +12,7 @@ import { TodosComponent } from './components/todos/todos.component';
 //Providers - Services
 //Bootstrap - Root Component Inserted Into Index.html Page
 @NgModule({
-  declarations: [AppComponent, TodosComponent],
+  declarations: [AppComponent, TodosComponent, TodoItemComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
