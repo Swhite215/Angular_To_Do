@@ -13,6 +13,6 @@ export class TodosComponent implements OnInit {
 
   //Similar to Component Did Mount
   ngOnInit() {
-    this.todos = this.todoService.getTodos();
+    this.todoService.getTodos().subscribe(todos => (this.todos = todos));
   }
 }
