@@ -5,6 +5,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { TodosComponent } from "./components/todos/todos.component";
 import { TodoItemComponent } from "./components/todo-item/todo-item.component";
+import { HeaderComponent } from './components/layout/header/header.component';
 
 //Entry Point to Angular - Meeting Place for Components
 //Declarations - Components
@@ -12,7 +13,7 @@ import { TodoItemComponent } from "./components/todo-item/todo-item.component";
 //Providers - Services
 //Bootstrap - Root Component Inserted Into Index.html Page
 @NgModule({
-  declarations: [AppComponent, TodosComponent, TodoItemComponent],
+  declarations: [AppComponent, TodosComponent, TodoItemComponent, HeaderComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent]
