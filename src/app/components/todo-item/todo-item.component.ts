@@ -6,9 +6,19 @@ import Todo from "../../models/Todo";
   styleUrls: ["./todo-item.component.css"]
 })
 export class TodoItemComponent implements OnInit {
-  @Input() todo: Todo[];
+  @Input() todo: Todo;
 
   constructor() {}
 
   ngOnInit() {}
+
+  //Set Dynamic Classes
+  setClasses() {
+    let classes = {
+      todo: true,
+      "is-complete": this.todo.completed
+    };
+
+    return classes;
+  }
 }
